@@ -463,10 +463,12 @@ textarea{
     color: var(--color-septenary);
 }
 
-.scroll-top-button {
+#scroll-top-button {
     display: flex;
-    text-align: center;
+    width: 100%;
     justify-content: center;
+    background: var(--color-septenary);
+    border: var(--color-septenary);
 }
 
 .scroll-top {
@@ -619,7 +621,6 @@ textarea{
     }
 }
 
-
 @media (max-width:1200px) {
     .container {
         padding: 8% 15% 0 15%;
@@ -714,7 +715,6 @@ textarea{
         font-size: 35px;
     }
 }
-
 
 @media (max-height:850px) {
     #intro img {
@@ -909,7 +909,6 @@ textarea{
         font-size: 30px;
     }
 }
-
 
 @media (max-height:500px) {
     #intro img {
