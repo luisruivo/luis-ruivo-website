@@ -634,6 +634,10 @@ textarea{
     .menu-icon {
         display: block;
     }
+
+    .logo {
+        font-size: 40px;
+    }
 }
 
 @media (max-width:650px) {
