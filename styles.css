@@ -1,0 +1,895 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+:root {
+    --color-primary: #08FDD8;
+    --color-secondary: #FF652F;
+    --color-tertiary: #FFE400;
+    --color-quaternary: #FFFFFF;
+    --color-quinary: #750013;
+    --color-senary: #5BC236;
+    --color-septenary: #000;
+    --color-octonary: #747474;
+    --color-nonary: #19261A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-septenary);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-active {
+    background: var(--color-nonary);
+    transition: 0.4s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, var(--color-secondary) 25%, var(--color-tertiary) 25%, var(--color-tertiary) 50%,var(--color-quaternary) 50%, var(--color-quaternary) 75%, var(--color-primary) 75%) 1;
+}
+
+.logo {
+    font-size: 50px;
+    font-family: 'Nanum Pen Script', sans-serif;
+    color: var(--color-primary);
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo .orange {
+    color: var(--color-secondary);
+}
+
+.logo .yellow {
+    color: var(--color-tertiary);
+}
+
+.logo .white {
+    color: var(--color-quaternary);
+}
+
+.navbar-items {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.navbar-items li {
+    list-style: none;
+}
+
+.nav-section {
+    color: var(--color-primary);
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 60px;
+    padding: 0 40px;
+}
+
+.nav-section:hover {
+    color: var(--color-quaternary);
+}
+
+.menu-icon {
+    display: none;
+    position: relative;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
+.menu-icon .bar, .menu-icon::after, .menu-icon::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-primary);
+    margin: 6px 0px;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+.menu-icon.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.menu-icon.is-active::after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.menu-icon.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-navbar-items {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    background-color: var(--color-septenary);
+    padding-top: 60px;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.mobile-navbar-items.is-active {
+    left: 0;
+}
+
+.mobile-navbar-items img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: var(--color-primary) 2px solid;
+    margin-top: 20px;
+}
+
+.mobile-text-name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    color: var(--color-primary);
+    margin-top: 10px;
+}
+
+.mobile-text-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    color: var(--color-quaternary);
+    margin-top: 10px;
+}
+
+.mobile-navbar {
+    width: 100%;
+    background-color: var(--color-nonary);
+    text-align: center;
+    border-top: var(--color-octonary) 1px solid;
+    margin-top: 10px;
+}
+
+.mobile-navbar li {
+    list-style: none;
+    border-bottom: var(--color-octonary) 1px solid;
+    padding: 10px 0;
+}
+
+.mobile-navbar a {
+    font-size: 50px;
+    font-family: "Nanum Pen Script", sans-serif;
+    color: var(--color-primary);
+}
+
+.mobile-link {
+    margin-top: 10px;
+}
+
+.mobile-link a {
+    color: var(--color-primary);
+    font-size: 50px;
+    padding: 0 10px;
+}
+
+#intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: var(--color-primary) 3px solid;
+    margin-top: 80px;
+}
+
+h4 {
+    color: var(--color-primary);
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: var(--color-quaternary);
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 80px;
+    margin-top: 20px;
+}
+
+h3 {
+    color: var(--color-quaternary);
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 5px;
+}
+
+.highlight {
+    color: var(--color-primary);
+}
+
+#intro a {
+    border: var(--color-primary) 2px solid;
+    color: var(--color-primary);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-family: 'Nanum Pen Script', sans-serif;
+    margin-top: 50px;
+}
+
+#intro a:hover {
+    background: var(--color-primary);
+    color: var(--color-septenary);
+}
+
+.container {
+    padding: 5% 15% 0 15%;
+    text-align: center;
+}
+
+h1 {
+    color: var(--color-primary);
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 80px;
+    padding-bottom: 20px;
+    text-decoration: underline 3px solid;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, var(--color-secondary) 25%, var(--color-tertiary) 25%, var(--color-tertiary) 50%,var(--color-quaternary) 50%, var(--color-quaternary) 75%, var(--color-primary) 75%) 1;
+}
+
+.container p {
+    color: var(--color-primary);
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.highlight-2 {
+    color: var(--color-quaternary);
+}
+
+.cv {
+    margin: 80px 0;
+    padding: 10px;
+}
+
+.cv a {
+    color: var(--color-primary);
+    border: var(--color-primary) 1px solid;
+    padding: 10px;
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 60px;
+    border-radius: 5px;
+}
+
+.cv a:hover {
+    background: var(--color-primary);
+    color: var(--color-septenary);
+}
+
+#my-skills {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, var(--color-secondary) 25%, var(--color-tertiary) 25%, var(--color-tertiary) 50%,var(--color-quaternary) 50%, var(--color-quaternary) 75%, var(--color-primary) 75%) 1;
+}
+
+.skills-box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    column-gap: 10px;
+    row-gap: 50px;
+    padding: 30px 0;
+    margin: 80px 0;
+}
+
+.skills-box i {
+    color: var(--color-primary);
+    font-size: 100px;
+}
+
+.skills-box img {
+    color: var(--color-primary);
+    object-fit: cover;
+    height: 100px;
+}
+
+#my-work {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, var(--color-secondary) 25%, var(--color-tertiary) 25%, var(--color-tertiary) 50%,var(--color-quaternary) 50%, var(--color-quaternary) 75%, var(--color-primary) 75%) 1;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    column-gap: 40px;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+
+.portfolio-box {
+    background: var(--color-nonary);
+    border: var(--color-primary) 2px solid;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 0 10px;
+}
+
+.portfolio-intro {
+    font-size: 40px;
+    font-family: 'Nanum Pen Script', sans-serif;
+    color: var(--color-primary);
+}
+
+.portfolio-text {
+    font-size: 50px;
+    font-family: 'Nanum Pen Script', sans-serif;
+    color: var(--color-quaternary);
+}
+
+.portfolio-info {
+    font-size: 40px;
+    font-family: 'Nanum Pen Script', sans-serif;
+    color: var(--color-primary);
+}
+
+.portfolio-view {
+    display: flex;
+    justify-content: center;
+}
+
+.view-more, .view-repo {
+    padding: 5px 20px;
+    border: var(--color-primary) 1px solid;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.view-more {
+    margin-right: 10px;
+}
+
+.view-repo {
+    margin-left: 10px;
+}
+
+.view-more i, .view-repo i {
+    color: var(--color-quaternary);
+    font-size: 40px;
+}
+
+.view-text {
+    font-size: 30px;
+    font-family: 'Nanum Pen Script', sans-serif;
+    color: var(--color-quaternary);
+}
+
+.view-more:hover, .view-repo:hover {
+    background: var(--color-septenary);
+}
+
+#contact {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, var(--color-secondary) 25%, var(--color-tertiary) 25%, var(--color-tertiary) 50%,var(--color-quaternary) 50%, var(--color-quaternary) 75%, var(--color-primary) 75%) 1;
+}
+
+.contact-form {
+    margin-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form input {
+    background-color: var(--color-nonary);
+    color: var(--color-primary);
+    border-radius: 5px;
+    border: var(--color-primary) solid 1px;
+    height: 100px;
+    margin: 15px;
+    padding: 0 5px;
+    font-family: "Nanum Pen Script", sans-serif;
+    font-size: 35px;
+}
+
+textarea{
+    background-color: var(--color-nonary);
+    color: var(--color-primary);
+    border-radius: 5px;
+    border: var(--color-primary) solid 1px;
+    margin: 15px;
+    padding: 0 5px;
+    font-family: "Nanum Pen Script", sans-serif;
+    font-size: 40px;
+}
+
+.send-button {
+    background-color: var(--color-nonary);
+    color: var(--color-primary);
+    border-radius: 5px;
+    border: var(--color-primary) solid 1px;
+    margin: 15px;
+    padding: 10px;
+    font-family: "Nanum Pen Script", sans-serif;
+    font-size: 50px;
+    width: 30%;
+    margin-bottom: 80px;
+}
+
+.send-button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-septenary);
+}
+
+.scroll-top-button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.scroll-top {
+    border-radius: 50%;
+    width: 100px;
+    height: 90px;
+    color: var(--color-primary);
+    border: var(--color-primary) 1px solid;
+    background-color: var(--color-septenary);
+    margin-top: 20px;
+}
+
+.scroll-top .fa-solid {
+    font-size: 60px;
+    color: var(--color-quaternary);
+    margin-top: 10px;
+}
+
+.scroll-top .fa-solid:hover {
+    transition: 0.6s;
+}
+
+.scroll-active {
+    transition: 0.6s;
+}
+
+.footer-link-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link-container a {
+    color: var(--color-primary);
+    font-size: 60px;
+    padding: 0 10px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Nanum Pen Script", sans-serif;
+    color: var(--color-primary);
+    padding-bottom: 20px;
+    user-select: none;
+}
+
+@media (max-width:1500px) {
+    .nav-section {
+        font-size: 40px;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 65px;
+    }
+
+    h3 {
+        font-size: 65px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .container {
+        padding: 3% 15% 0 15%;
+    }
+
+    .container p {
+        font-size: 20px;
+    }
+
+    .cv a {
+        font-size: 25px;
+    }
+
+    .skills-box-container {
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+        margin: 30px 0;
+    }
+
+    .skills-box i {
+        font-size: 55px;
+    }
+
+    .skills-box img {
+        height: 55px;
+    }
+    
+    .portfolio-content {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    .portfolio-intro {
+        font-size: 30px;
+    }
+    
+    .portfolio-text {
+        font-size: 40px;
+    }
+    
+    .portfolio-info {
+        font-size: 30px;
+    }
+    
+    .view-more, .view-repo {
+        padding: 5px 10px;
+    }
+    
+    .view-more i, .view-repo i {
+        font-size: 25px;
+    }
+    
+    .view-text {
+        font-size: 25px;
+    }
+
+    form input {
+        height: 50px;
+        font-size: 25px;
+    }
+    
+    textarea{
+        font-size: 25px;
+    }
+    
+    .send-button {
+        font-size: 25px;
+    }
+
+    .scroll-top {
+        width: 60px;
+        height: 50px;
+    }
+    
+    .scroll-top .fa-solid {
+        font-size: 40px;
+        margin-top: 5px;
+    }
+
+    .footer-link-container a {
+        font-size: 40px;
+    }
+    
+    .footer-text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:450px) {
+    .portfolio-box {
+        margin: 10px 10px;
+    }
+
+    .portfolio-intro {
+        font-size: 20px;
+    }
+    
+    .portfolio-text {
+        font-size: 25px;
+    }
+    
+    .portfolio-info {
+        font-size: 20px;
+    }
+    
+    .view-more i, .view-repo i {
+        font-size: 18px;
+    }
+    
+    .view-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-height:850px) {
+    #intro img {
+        height: 200px;
+        width: 200px;
+        margin-top: 40px;
+    }
+    
+    h4 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 60px;
+    }
+    
+    h3 {
+        font-size: 55px;
+    }
+    
+    #intro a {
+        font-size: 35px;
+    }
+
+    .mobile-navbar-items img {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .mobile-text-name {
+        font-size: 35px;
+    }
+    
+    .mobile-text-title {
+        font-size: 35px;
+    }
+    
+    .mobile-navbar a {
+        font-size: 40px;
+    }
+    
+    .mobile-link a {
+        font-size: 40px;
+    }
+}
+
+@media (max-height:760px) {
+    #intro img {
+        height: 150px;
+        width: 150px;
+        margin-top: 30px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 50px;
+    }
+    
+    h3 {
+        font-size: 40px;
+    }
+    
+    #intro a {
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    .mobile-navbar-items img {
+        height: 130px;
+        width: 130px;
+    }
+    
+    .mobile-text-name {
+        font-size: 30px;
+    }
+    
+    .mobile-text-title {
+        font-size: 30px;
+    }
+    
+    .mobile-navbar a {
+        font-size: 35px;
+    }
+    
+    .mobile-link a {
+        font-size: 35px;
+    }
+}
+
+@media (max-height:680px) {
+    #intro img {
+        height: 150px;
+        width: 150px;
+        margin-top: 30px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    h2 {
+        font-size: 45px;
+    }
+    
+    h3 {
+        font-size: 35px;
+    }
+    
+    #intro a {
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    .mobile-navbar-items img {
+        height: 110px;
+        width: 110px;
+    }
+    
+    .mobile-text-name {
+        font-size: 25px;
+    }
+    
+    .mobile-text-title {
+        font-size: 25px;
+    }
+
+    .mobile-navbar li {
+        padding: 8px;
+    }
+    
+    .mobile-navbar a {
+        font-size: 30px;
+    }
+    
+    .mobile-link a {
+        font-size: 35px;
+    }
+}
+
+@media (max-height:580px) {
+    #intro img {
+        height: 130px;
+        width: 130px;
+        margin-top: 30px;
+    }
+    
+    h4 {
+        font-size: 15px;
+    }
+    
+    h2 {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    
+    h3 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    
+    #intro a {
+        font-size: 25px;
+        padding: 12px;
+        margin-top: 25px;
+    }
+
+    .mobile-navbar-items img {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .mobile-text-name {
+        font-size: 20px;
+    }
+    
+    .mobile-text-title {
+        font-size: 20px;
+    }
+
+    .mobile-navbar li {
+        padding: 5px;
+    }
+    
+    .mobile-navbar a {
+        font-size: 25px;
+    }
+    
+    .mobile-link a {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-height:480px) {
+    #intro img {
+        height: 120px;
+        width: 120px;
+        margin-top: 20px;
+    }
+    
+    h4 {
+        margin-top: 10px;
+    }
+    
+    h2 {
+        font-size: 35px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+    
+    #intro a {
+        font-size: 25px;
+        padding: 8px;
+        margin-top: 20px;
+    }
+
+    .mobile-navbar-items img {
+        height: 110px;
+        width: 110px;
+        margin-top: 10px;
+    }
+    
+    .mobile-text-name {
+        font-size: 20px;
+        margin-top: 0;
+    }
+    
+    .mobile-text-title {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .mobile-navbar li {
+        padding: 5px;
+    }
+    
+    .mobile-navbar a {
+        font-size: 25px;
+    }
+    
+    .mobile-link a {
+        font-size: 30px;
+    }
+}
