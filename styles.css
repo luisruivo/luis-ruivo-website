@@ -535,7 +535,7 @@ textarea{
     }
 
     .container {
-        padding: 3% 15% 0 15%;
+        padding: 5% 15% 0 15%;
     }
 
     .container p {
@@ -619,7 +619,40 @@ textarea{
     }
 }
 
+
+@media (max-width:1200px) {
+    .container {
+        padding: 8% 15% 0 15%;
+    }
+}
+
+@media (max-width:900px) {
+    .navbar-items {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width:650px) {
+    .container {
+        padding: 10% 15% 0 15%;
+    }
+}
+
+@media (max-width:500px) {
+    .container {
+        padding: 13% 15% 0 15%;
+    }
+}
+
 @media (max-width:450px) {
+    .container {
+        padding: 16% 15% 0 15%;
+    }
+
     .portfolio-box {
         margin: 10px 10px;
     }
@@ -644,6 +677,40 @@ textarea{
         font-size: 18px;
     }
 }
+
+@media (max-width:400px) {
+    #intro img {
+        height: 180px;
+        width: 180px;
+    }
+
+    h2 {
+        font-size: 55px;
+    }
+
+    h3 {
+        font-size: 50px;
+    }
+
+    #intro a {
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    .mobile-navbar-items img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .mobile-text-name, .mobile-text-title {
+        font-size: 30px;
+    }
+
+    .mobile-navbar a {
+        font-size: 35px;
+    }
+}
+
 
 @media (max-height:850px) {
     #intro img {
@@ -840,7 +907,7 @@ textarea{
 }
 
 
-@media (max-height:480px) {
+@media (max-height:500px) {
     #intro img {
         height: 120px;
         width: 120px;
