@@ -463,12 +463,10 @@ textarea{
     color: var(--color-septenary);
 }
 
-#scroll-top-button {
+.scroll-top-button {
     display: flex;
-    width: 100%;
+    text-align: center;
     justify-content: center;
-    background: var(--color-septenary);
-    border: var(--color-septenary);
 }
 
 .scroll-top {
@@ -638,6 +636,10 @@ textarea{
 
     .logo {
         font-size: 40px;
+    }
+
+    #intro img {
+        margin-top: 120px;
     }
 }
 
