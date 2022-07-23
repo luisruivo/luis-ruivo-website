@@ -809,7 +809,7 @@ textarea{
     #intro img {
         height: 150px;
         width: 150px;
-        margin-top: 60px;
+        margin-top: 50px;
     }
     
     h4 {
@@ -859,7 +859,6 @@ textarea{
     #intro img {
         height: 130px;
         width: 130px;
-        margin-top: 60px;
     }
     
     h4 {
@@ -912,7 +911,6 @@ textarea{
     #intro img {
         height: 120px;
         width: 120px;
-        margin-top: 60px;
     }
     
     h4 {
@@ -970,6 +968,24 @@ textarea{
 
 @media (max-height:430px) {
     #intro img {
-        margin-top: 20px;
+        height: 100px;
+        width: 100px;
+        margin-top: 50px;
+    }
+
+    h4 {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    #intro a {
+        font-size: 20px;
     }
 }
