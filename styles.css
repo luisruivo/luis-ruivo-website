@@ -517,14 +517,11 @@ textarea{
 }
 
 .skills-list {
-    list-style-type: disc;
-    padding-left: 20px;
     font-size: 100px;
     background: var(--color-primary);
 }
 
 .skills-list li {
-    margin-bottom: 8px;
     font-size: 100px;
     background: var(--color-primary);
 }
