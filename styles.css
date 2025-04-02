@@ -523,6 +523,8 @@ textarea{
 
 .skills-list li {
     margin-bottom: 8px;
+    color: #08FDD8;
+    font-size: 100px;
 }
 
 @media (max-width:1500px) {
