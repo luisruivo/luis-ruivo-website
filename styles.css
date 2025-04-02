@@ -525,6 +525,7 @@ textarea{
     margin-bottom: 8px;
     color: #08FDD8 !important;
     font-size: 100px;
+    display: block;
 }
 
 @media (max-width:1500px) {
