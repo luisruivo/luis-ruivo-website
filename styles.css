@@ -517,8 +517,11 @@ textarea{
 }
 
 .skills-list {
-    font-size: 100px;
-    color: #08FDD8;
+    list-style-type: disc;  /* Adds bullet points */
+    text-align: left;
+    color: var(--color-primary); /* Uses your defined color */
+    font-size: 30px; /* Adjust size as needed */
+    margin-left: 20px; /* Adds spacing for better readability */
 }
 
 .skills-list li {
