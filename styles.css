@@ -516,21 +516,6 @@ textarea{
     user-select: none;
 }
 
-.skills-list {
-    list-style-type: disc;  /* Adds bullet points */
-    text-align: left;
-    color: var(--color-primary); /* Uses your defined color */
-    font-size: 30px; /* Adjust size as needed */
-    margin-left: 20px; /* Adds spacing for better readability */
-}
-
-.skills-list li {
-    margin-bottom: 8px;
-    color: #08FDD8 !important;
-    font-size: 100px;
-    display: block;
-}
-
 @media (max-width:1500px) {
     .nav-section {
         font-size: 40px;
