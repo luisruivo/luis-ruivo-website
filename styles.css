@@ -523,7 +523,7 @@ textarea{
 
 .skills-list li {
     margin-bottom: 8px;
-    color: #08FDD8;
+    color: #08FDD8 !important;
     font-size: 100px;
 }
 
