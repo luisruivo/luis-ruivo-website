@@ -518,12 +518,11 @@ textarea{
 
 .skills-list {
     font-size: 100px;
-    background: var(--color-primary);
+    color: #08FDD8;
 }
 
 .skills-list li {
-    font-size: 100px;
-    background: var(--color-primary);
+    margin-bottom: 8px;
 }
 
 @media (max-width:1500px) {
