@@ -516,6 +516,16 @@ textarea{
     user-select: none;
 }
 
+.skills-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+}
+
 @media (max-width:1500px) {
     .nav-section {
         font-size: 40px;
