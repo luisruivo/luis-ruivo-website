@@ -519,7 +519,7 @@ textarea{
 .skills-list {
     list-style-type: disc;
     padding-left: 20px;
-    font-size: 1.2em;
+    font-size: 100px;
 }
 
 .skills-list li {
